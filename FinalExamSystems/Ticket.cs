@@ -5,9 +5,9 @@ using System.Text;
 
 namespace FinalExamSystems
 {
-    public class Itinerary
+    public class Ticket
     {
-        private DateTime departureDate
+        private double price
         {
             get => default;
             set
@@ -15,7 +15,7 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime returnDate
+        private Passenger passenger
         {
             get => default;
             set
@@ -23,7 +23,7 @@ namespace FinalExamSystems
             }
         }
 
-        private double totalPrice
+        private TicketStatus status
         {
             get => default;
             set
@@ -31,7 +31,7 @@ namespace FinalExamSystems
             }
         }
 
-        private CreditCard paymentMehod
+        private TicketType type
         {
             get => default;
             set
@@ -39,7 +39,7 @@ namespace FinalExamSystems
             }
         }
 
-        private ItineraryType type
+        private CancellationInsurance insurance
         {
             get => default;
             set
@@ -47,23 +47,7 @@ namespace FinalExamSystems
             }
         }
 
-        private Airport origin
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        private Airport destination
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        private FinalExamSystems.Passenger[] passengers
+        private Seat seat
         {
             get => default;
             set
