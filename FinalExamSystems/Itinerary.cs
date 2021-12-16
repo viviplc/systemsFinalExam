@@ -7,7 +7,9 @@ namespace FinalExamSystems
 {
     public class Itinerary
     {
-        private DateTime departureDate
+        private Customer customer;
+
+        public DateTime departureDate
         {
             get => default;
             set
@@ -15,7 +17,7 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime returnDate
+        public DateTime returnDate
         {
             get => default;
             set
@@ -23,7 +25,7 @@ namespace FinalExamSystems
             }
         }
 
-        private double totalPrice
+        public double totalPrice
         {
             get => default;
             set
@@ -31,7 +33,7 @@ namespace FinalExamSystems
             }
         }
 
-        private CreditCard paymentMehod
+        public CreditCard paymentMehod
         {
             get => default;
             set
@@ -39,7 +41,7 @@ namespace FinalExamSystems
             }
         }
 
-        private ItineraryType type
+        public ItineraryType type
         {
             get => default;
             set
@@ -47,7 +49,7 @@ namespace FinalExamSystems
             }
         }
 
-        private Airport origin
+        public Airport origin
         {
             get => default;
             set
@@ -55,7 +57,7 @@ namespace FinalExamSystems
             }
         }
 
-        private Airport destination
+        public Airport destination
         {
             get => default;
             set
@@ -63,7 +65,7 @@ namespace FinalExamSystems
             }
         }
 
-        private FinalExamSystems.Passenger[] passengers
+        public FinalExamSystems.Passenger[] passengers
         {
             get => default;
             set
@@ -71,12 +73,10 @@ namespace FinalExamSystems
             }
         }
 
-        private Customer Customer
+        public Customer Customer
         {
-            get => default;
-            set
-            {
-            }
+            get => customer; set => customer = value;
         }
+
     }
 }
