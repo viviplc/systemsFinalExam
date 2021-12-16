@@ -10,7 +10,8 @@ namespace FinalExamSystems
     /// </summary>
     public class Customer : User
     {
-        private String firstName
+
+        public String FirstName
         {
             get => default;
             set
@@ -18,7 +19,7 @@ namespace FinalExamSystems
             }
         }
 
-        private String lastName
+        public String LastName
         {
             get => default;
             set
@@ -26,7 +27,7 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime birthdate
+        public DateTime Birthdate
         {
             get => default;
             set
@@ -34,7 +35,7 @@ namespace FinalExamSystems
             }
         }
 
-        private String gender
+        public String Gender
         {
             get => default;
             set
@@ -42,7 +43,7 @@ namespace FinalExamSystems
             }
         }
 
-        private ushort phone
+        public ushort Phone
         {
             get => default;
             set
@@ -50,7 +51,7 @@ namespace FinalExamSystems
             }
         }
 
-        private string email
+        public string Email
         {
             get => default;
             set
@@ -58,7 +59,7 @@ namespace FinalExamSystems
             }
         }
 
-        private string password
+        public string Password
         {
             get => default;
             set
@@ -66,7 +67,7 @@ namespace FinalExamSystems
             }
         }
 
-        private FinalExamSystems.CreditCard[] paymentMethods
+        public FinalExamSystems.CreditCard[] PaymentMethods
         {
             get => default;
             set
@@ -74,7 +75,7 @@ namespace FinalExamSystems
             }
         }
 
-        private FinalExamSystems.Itinerary[] itineraryHistoric
+        public FinalExamSystems.Itinerary[] ItineraryHistoric
         {
             get => default;
             set
@@ -82,7 +83,7 @@ namespace FinalExamSystems
             }
         }
 
-        private Itinerary reservation
+        public Itinerary Reservation
         {
             get => default;
             set

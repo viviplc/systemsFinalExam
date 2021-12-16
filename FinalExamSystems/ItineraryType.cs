@@ -7,12 +7,8 @@ namespace FinalExamSystems
 {
     public class ItineraryType
     {
-        private string description
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        private string description;
+
+        public string Description { get => description; set => description = value; }
     }
 }

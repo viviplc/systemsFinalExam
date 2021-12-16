@@ -7,7 +7,10 @@ namespace FinalExamSystems
 {
     public class ServicesHistory
     {
-        private string isRegister
+        private DateTime dateRegister;
+        private string idRegister;
+
+        public User User
         {
             get => default;
             set
@@ -15,7 +18,7 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime dateRegister
+        public Service Service
         {
             get => default;
             set
@@ -23,20 +26,7 @@ namespace FinalExamSystems
             }
         }
 
-        private User User
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        private Service Service
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public DateTime DateRegister { get => dateRegister; set => dateRegister = value; }
+        public string IdRegister { get => idRegister; set => idRegister = value; }
     }
 }

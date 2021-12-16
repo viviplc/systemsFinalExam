@@ -7,12 +7,8 @@ namespace FinalExamSystems
 {
     public abstract class Service
     {
-        private string id
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        private string idService;
+
+        public string IdService { get => idService; set => idService = value; }
     }
 }
