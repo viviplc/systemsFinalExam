@@ -5,6 +5,9 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  This class performs an important function.
+    /// </summary>
     public class Customer : User
     {
         private String firstName
@@ -64,6 +67,22 @@ namespace FinalExamSystems
         }
 
         private FinalExamSystems.CreditCard[] paymentMethods
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        private FinalExamSystems.Itinerary[] itineraryHistoric
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        private Itinerary reservation
         {
             get => default;
             set

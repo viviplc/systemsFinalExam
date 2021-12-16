@@ -14,13 +14,5 @@ namespace FinalExamSystems
             {
             }
         }
-
-        private Service service
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }

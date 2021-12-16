@@ -5,6 +5,9 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Airport
     {
         private string code

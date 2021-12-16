@@ -46,5 +46,21 @@ namespace FinalExamSystems
             {
             }
         }
+
+        private string flightNumber
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        private string status
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

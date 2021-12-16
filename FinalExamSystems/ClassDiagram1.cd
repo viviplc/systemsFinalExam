@@ -1,49 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="FinalExamSystems.Customer">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="6.75" Y="3" Width="1.5" />
+    <AssociationLine Name="itineraryHistoric" Type="FinalExamSystems.Itinerary" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="5.188" />
+        <Point X="10.188" Y="5.188" />
+        <Point X="10.188" Y="6.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.101" Y="0.164" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="reservation" Type="FinalExamSystems.Itinerary" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="5.062" />
+        <Point X="10.438" Y="5.062" />
+        <Point X="10.438" Y="6.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.032" Y="0.123" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAABAAAAgBAAAgAAAAAAAAAAgAAAACgAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAABAAAAgBAAAgDAAAAAAAAAgAAAACgAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="paymentMethods" />
+      <Property Name="itineraryHistoric" />
+      <Property Name="reservation" />
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.CreditCard">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Position X="7" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAEBAAAAAAAAAAAACAAAAAAAAAACAAAAAAg=</HashCode>
       <FileName>CreditCard.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.ItineraryType">
-    <Position X="4.5" Y="6.5" Width="1.5" />
+    <Position X="9.75" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ItineraryType.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.Itinerary">
-    <Position X="5" Y="4.25" Width="1.5" />
+    <Position X="10" Y="6.75" Width="1.5" />
     <AssociationLine Name="origin" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6.5" Y="4.994" />
-        <Point X="7.604" Y="4.994" Type="JumpStart" />
-        <Point X="7.771" Y="4.994" Type="JumpEnd" />
-        <Point X="7.938" Y="4.994" />
-        <Point X="7.938" Y="3.353" />
+        <Point X="11.5" Y="7.494" />
+        <Point X="12.875" Y="7.494" />
+        <Point X="12.875" Y="4.353" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="destination" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6.5" Y="4.591" />
-        <Point X="6.938" Y="4.591" />
-        <Point X="6.938" Y="3.353" />
+        <Point X="11.5" Y="7.091" />
+        <Point X="12.062" Y="7.091" />
+        <Point X="12.062" Y="4.353" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="passengers" Type="FinalExamSystems.Passenger">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.168" Y="-0.363" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Customer" Type="FinalExamSystems.Customer" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.438" Y="6.75" />
+        <Point X="11.438" Y="4.875" />
+        <Point X="8.25" Y="4.875" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>CAAIBAAAAAAAAAACBAAAAABAAAABAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>CAEIBAAAAAAAAAACBAAAAABAAAABAAAAAAAABAAAAAA=</HashCode>
       <FileName>Itinerary.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -52,17 +84,16 @@
       <Property Name="origin" />
       <Property Name="destination" />
       <Property Name="passengers" />
+      <Property Name="Customer" />
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Airport">
-    <Position X="6.75" Y="2.25" Width="1.5" />
+    <Position X="11.5" Y="3.25" Width="1.5" />
     <AssociationLine Name="gates" Type="FinalExamSystems.Gate" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7.938" Y="2.25" />
-        <Point X="7.938" Y="1.052" />
-        <Point X="7.193" Y="1.052" Type="JumpStart" />
-        <Point X="7.026" Y="1.052" Type="JumpEnd" />
-        <Point X="6" Y="1.052" />
+        <Point X="12.688" Y="3.25" />
+        <Point X="12.688" Y="2.398" />
+        <Point X="10.5" Y="2.398" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -74,14 +105,20 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Gate">
-    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Position X="9" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Gate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.City">
-    <Position X="4.25" Y="2" Width="1.5" />
+    <Position X="9" Y="3.25" Width="1.5" />
+    <AssociationLine Name="airports" Type="FinalExamSystems.Airport" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="3.75" />
+        <Point X="11.5" Y="3.75" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>City.cs</FileName>
@@ -91,13 +128,13 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Passenger">
-    <Position X="7.75" Y="8.25" Width="1.5" />
+    <Position X="11.75" Y="10" Width="1.5" />
     <AssociationLine Name="tickets" Type="FinalExamSystems.Ticket" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="9.25" Y="9.865" />
-        <Point X="9.625" Y="9.865" />
-        <Point X="9.625" Y="7.563" />
-        <Point X="11" Y="7.563" />
+        <Point X="13.25" Y="11.312" />
+        <Point X="13.625" Y="11.312" />
+        <Point X="13.625" Y="11.313" />
+        <Point X="15.25" Y="11.313" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -109,12 +146,37 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Ticket">
-    <Position X="11" Y="6.75" Width="1.5" />
+    <Position X="15.25" Y="10.5" Width="1.5" />
     <AssociationLine Name="passenger" Type="FinalExamSystems.Passenger" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="7.188" />
-        <Point X="8.688" Y="7.188" />
-        <Point X="8.688" Y="8.25" />
+        <Point X="15.25" Y="10.938" />
+        <Point X="14.875" Y="10.938" />
+        <Point X="14.875" Y="10.938" />
+        <Point X="13.25" Y="10.938" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="type" Type="FinalExamSystems.TicketType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.562" Y="10.5" />
+        <Point X="16.562" Y="10" />
+        <Point X="17.042" Y="10" Type="JumpStart" />
+        <Point X="17.208" Y="10" Type="JumpEnd" />
+        <Point X="19" Y="10" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="insurance" Type="FinalExamSystems.CancellationInsurance" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.75" Y="10.938" />
+        <Point X="17.125" Y="10.938" />
+        <Point X="17.125" Y="8.702" />
+        <Point X="19" Y="8.702" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="seat" Type="FinalExamSystems.Seat" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.562" Y="10.5" />
+        <Point X="15.562" Y="6.875" />
+        <Point X="19" Y="6.875" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -130,40 +192,69 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.TicketStatus">
-    <Position X="10" Y="8.5" Width="1.5" />
+    <Position X="19" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TicketStatus.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.TicketType">
-    <Position X="11.75" Y="8.5" Width="1.5" />
+    <Position X="19" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TicketType.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.CancellationInsurance">
-    <Position X="13.75" Y="4.5" Width="1.5" />
+    <Position X="19" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAhAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CancellationInsurance.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.Seat">
-    <Position X="12" Y="2.75" Width="1.5" />
+    <Position X="19" Y="6" Width="1.5" />
+    <AssociationLine Name="ticket" Type="FinalExamSystems.Ticket" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19" Y="7.125" />
+        <Point X="16.375" Y="7.125" />
+        <Point X="16.375" Y="10.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.007" Y="0.078" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Flight" Type="FinalExamSystems.Flight" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="6" />
+        <Point X="19.5" Y="5.688" />
+        <Point X="18.562" Y="5.688" />
+        <Point X="18.562" Y="4.68" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.659" Y="0.1" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAIAEAAAAAAAAAAgAA=</HashCode>
       <FileName>Seat.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="ticket" />
+      <Property Name="Flight" />
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Flight">
-    <Position X="11" Y="0.5" Width="1.5" />
+    <Position X="17.5" Y="3" Width="1.5" />
+    <AssociationLine Name="seats" Type="FinalExamSystems.Seat" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.219" Y="4.68" />
+        <Point X="18.219" Y="6.312" />
+        <Point X="19" Y="6.312" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAIAAAAAAAAAAAACAAJAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <HashCode>AAQAAAIAAAAAAAAAAAACAAJAAAAAAAAAAAAAAAAEACA=</HashCode>
       <FileName>Flight.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -173,12 +264,34 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Route">
-    <Position X="8.5" Y="0.75" Width="1.5" />
-    <AssociationLine Name="flights" Type="FinalExamSystems.Flight" FixedToPoint="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <AssociationLine Name="origin" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="10" Y="1.25" />
-        <Point X="11" Y="1.25" />
+        <Point X="16.75" Y="1.368" />
+        <Point X="16.75" Y="4.062" />
+        <Point X="14.583" Y="4.062" Type="JumpStart" />
+        <Point X="14.417" Y="4.062" Type="JumpEnd" />
+        <Point X="13" Y="4.062" />
       </Path>
+    </AssociationLine>
+    <AssociationLine Name="destination" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.125" Y="1.368" />
+        <Point X="16.125" Y="3.688" />
+        <Point X="14.583" Y="3.687" Type="JumpStart" />
+        <Point X="14.417" Y="3.688" Type="JumpEnd" />
+        <Point X="13" Y="3.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="flights" Type="FinalExamSystems.Flight" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="1.368" />
+        <Point X="17.25" Y="3.973" />
+        <Point X="17.5" Y="3.973" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.053" Y="-0.295" />
+      </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>CAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
@@ -191,51 +304,60 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.FlightClass">
-    <Position X="14" Y="0.5" Width="1.5" />
+    <Position X="20" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlightClass.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.PotentialCustomer">
-    <Position X="0.5" Y="2.25" Width="1.75" />
+    <Position X="3.75" Y="1.75" Width="1.75" />
+    <InheritanceLine Type="FinalExamSystems.User" FixedFromPoint="true">
+      <Path>
+        <Point X="4.625" Y="3.5" />
+        <Point X="4.625" Y="2.747" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PotentialCustomer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.User">
-    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Position X="4.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="service" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Employee">
-    <Position X="0.5" Y="4" Width="1.5" />
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="FinalExamSystems.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.5" />
+        <Point X="6" Y="1.5" />
+        <Point X="13.75" Y="1.5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAgBAAAgAAAAAAAABAgAAAACgAAAAA=</HashCode>
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.Airline">
-    <Position X="8.5" Y="1.75" Width="1.5" />
+    <Position X="13.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAEAAAQAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Airline.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="brands" />
       <Property Name="cancellationPolicy" />
       <Property Name="employees" />
-      <Property Name="service" />
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Brand">
-    <Position X="8.5" Y="3.25" Width="1.5" />
+    <Position X="13.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Brand.cs</FileName>
@@ -246,7 +368,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Plane">
-    <Position X="8.25" Y="4.75" Width="1.5" />
+    <Position X="13.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Plane.cs</FileName>
@@ -256,39 +378,50 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.PlaneType">
-    <Position X="10.25" Y="4.5" Width="1.5" />
+    <Position X="13.5" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PlaneType.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.CancellationPolicy">
-    <Position X="10.25" Y="2.25" Width="1.5" />
+    <Position X="15.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CancellationPolicy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.Service">
-    <Position X="3.25" Y="8" Width="1.5" />
+    <Position X="4.5" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Service.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.ProvisionServices">
-    <Position X="2.25" Y="9.75" Width="1.5" />
+    <Position X="3.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAACA=</HashCode>
       <FileName>ProvisionServices.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.CustomerServices">
-    <Position X="4.25" Y="9.75" Width="1.5" />
+    <Position X="5.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAAAAAAAAIg=</HashCode>
       <FileName>CustomerServices.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.ServicesHistory">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABgAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServicesHistory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+      <Property Name="Service" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

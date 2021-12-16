@@ -5,9 +5,9 @@ using System.Text;
 
 namespace FinalExamSystems
 {
-    public class Seat
+    public class ServicesHistory
     {
-        private ushort rowNumber
+        private string isRegister
         {
             get => default;
             set
@@ -15,7 +15,7 @@ namespace FinalExamSystems
             }
         }
 
-        private string letter
+        private DateTime dateRegister
         {
             get => default;
             set
@@ -23,7 +23,7 @@ namespace FinalExamSystems
             }
         }
 
-        private Ticket ticket
+        private User User
         {
             get => default;
             set
@@ -31,7 +31,7 @@ namespace FinalExamSystems
             }
         }
 
-        private Flight Flight
+        private Service Service
         {
             get => default;
             set

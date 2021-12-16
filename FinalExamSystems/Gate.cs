@@ -14,5 +14,13 @@ namespace FinalExamSystems
             {
             }
         }
+
+        private bool isAvailable
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

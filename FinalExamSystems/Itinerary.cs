@@ -70,5 +70,13 @@ namespace FinalExamSystems
             {
             }
         }
+
+        private Customer Customer
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }
