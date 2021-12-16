@@ -165,8 +165,8 @@
     <Position X="8.5" Y="0.75" Width="1.5" />
     <AssociationLine Name="flights" Type="FinalExamSystems.Flight" FixedToPoint="true">
       <Path>
-        <Point X="10" Y="1.365" />
-        <Point X="10.375" Y="1.365" />
+        <Point X="10" Y="0.936" />
+        <Point X="10.375" Y="0.936" />
         <Point X="10.375" Y="1.734" />
         <Point X="11" Y="1.734" />
       </Path>
@@ -212,7 +212,7 @@
   <Class Name="FinalExamSystems.Airline">
     <Position X="8.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAQAAAAA=</HashCode>
+      <HashCode>AAMAAAACAAAAAAAAAAAIAAAAAAAEAAAAAAAAAQAAAAA=</HashCode>
       <FileName>Airline.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -222,7 +222,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.Brand">
-    <Position X="8.5" Y="3.25" Width="1.5" />
+    <Position X="8.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAgAAAAAAAAAAAAA=</HashCode>
       <FileName>Brand.cs</FileName>
