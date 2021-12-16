@@ -6,11 +6,14 @@ using System.Text;
 namespace FinalExamSystems
 {
     /// <summary>
-    ///  This class performs an important function.
+    ///  Customer class implements the Observer design pattern, keeping tracking on the timeout over a reservation
     /// </summary>
-    public class Customer : User
+    public class Customer : User, ICustomer
     {
 
+        /// <summary>
+        /// FirsName property
+        /// </summary>
         public String FirstName
         {
             get => default;
@@ -19,6 +22,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Last Name property
+        /// </summary>
         public String LastName
         {
             get => default;
@@ -27,6 +33,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Birthdate property
+        /// </summary>
         public DateTime Birthdate
         {
             get => default;
@@ -35,6 +44,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Gender property
+        /// </summary>
         public String Gender
         {
             get => default;
@@ -43,6 +55,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Phone property
+        /// </summary>
         public ushort Phone
         {
             get => default;
@@ -51,6 +66,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Email property
+        /// </summary>
         public string Email
         {
             get => default;
@@ -59,6 +77,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Password Property
+        /// </summary>
         public string Password
         {
             get => default;
@@ -67,6 +88,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// PaymentMEthods property
+        /// </summary>
         public FinalExamSystems.CreditCard[] PaymentMethods
         {
             get => default;
@@ -75,6 +99,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// ItineraryHistoric property
+        /// </summary>
         public FinalExamSystems.Itinerary[] ItineraryHistoric
         {
             get => default;
@@ -83,12 +110,25 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        /// Reservation property
+        /// </summary>
         public Itinerary Reservation
         {
             get => default;
             set
             {
             }
+        }
+
+        /// <summary>
+        /// Method to update the information on the customer about the timeout of the reservation set to 15 minutes
+        /// </summary>
+        /// <param name="itinerary">Itinerary saves the last status of the timeout</param>
+        public void Update(Itinerary itinerary)
+        {
+            //logic to handle the change of status of the reservation unavailable, update the view.
+            Console.WriteLine("Customer notified");
         }
     }
 }
