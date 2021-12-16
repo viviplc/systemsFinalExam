@@ -5,9 +5,9 @@ using System.Text;
 
 namespace FinalExamSystems
 {
-    public class Customer : User
+    public class Airline
     {
-        private String firstName
+        private string name
         {
             get => default;
             set
@@ -15,7 +15,7 @@ namespace FinalExamSystems
             }
         }
 
-        private String lastName
+        private FinalExamSystems.Brand[] brands
         {
             get => default;
             set
@@ -23,7 +23,7 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime birthdate
+        private CancellationPolicy cancellationPolicy
         {
             get => default;
             set
@@ -31,7 +31,7 @@ namespace FinalExamSystems
             }
         }
 
-        private String gender
+        private FinalExamSystems.Employee[] employees
         {
             get => default;
             set
@@ -39,31 +39,7 @@ namespace FinalExamSystems
             }
         }
 
-        private ushort phone
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        private string email
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        private string password
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        private FinalExamSystems.CreditCard[] paymentMethods
+        private Service service
         {
             get => default;
             set
