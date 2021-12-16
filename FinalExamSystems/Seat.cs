@@ -7,6 +7,10 @@ namespace FinalExamSystems
 {
     public class Seat
     {
+        private bool available;
+
+        public bool Available { get => available; set => available = value; }
+
         private ushort rowNumber
         {
             get => default;
@@ -38,5 +42,6 @@ namespace FinalExamSystems
             {
             }
         }
+
     }
 }

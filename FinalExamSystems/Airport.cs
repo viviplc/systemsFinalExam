@@ -10,6 +10,7 @@ namespace FinalExamSystems
     /// </summary>
     public class Airport
     {
+
         private string code
         {
             get => default;

@@ -5,6 +5,9 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  This Flight class applies the Information Expert pattern. This is because the Flight class aggregates all the seats in the Flight in the seats field, therefore because it has all the information of the seats, the method of getting available seats in Flight (GetAvailableSeats) is defined in the Flight class (information expert)
+    /// </summary>
     public class Flight
     {
         private DateTime departureTime
@@ -23,6 +26,7 @@ namespace FinalExamSystems
             }
         }
 
+       
         private FinalExamSystems.Seat[] seats
         {
             get => default;
@@ -62,5 +66,13 @@ namespace FinalExamSystems
             {
             }
         }
+        /// <summary>
+        ///  This method gets the seats that are available, it is in the Flight class as the Flight is the information expert with all the seat information
+        /// </summary>
+        private FinalExamSystems.Seat[] GetAvailableSeats()
+        {
+            return Array.FindAll(seats, seat => seat.Available);
+        }
+
     }
 }
