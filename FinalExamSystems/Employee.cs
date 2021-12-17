@@ -5,9 +5,15 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  Employee class represents an employee of an airline which is a type of user of the airline reservation system
+    /// </summary>
     public class Employee : User
     {
-        private string firstName
+        /// <summary>
+        ///  FirstName property represents the first name of the employee
+        /// </summary>
+        public string FirstName
         {
             get => default;
             set
@@ -15,7 +21,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string lastName
+        /// <summary>
+        ///  LastName property represents the last name of the employee
+        /// </summary>
+        public string LastName
         {
             get => default;
             set
@@ -23,7 +32,10 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime birthdate
+        /// <summary>
+        ///  Birthdate property represents the birthday of the employee
+        /// </summary>
+        public DateTime Birthdate
         {
             get => default;
             set
@@ -31,7 +43,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string email
+        /// <summary>
+        ///  Email property represents the email of the employee
+        /// </summary>
+        public string Email
         {
             get => default;
             set
@@ -39,7 +54,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string gender
+        /// <summary>
+        ///  Gender property represents the gender of the employee
+        /// </summary>
+        public string Gender
         {
             get => default;
             set
@@ -47,7 +65,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string password
+        /// <summary>
+        ///  Password property represents the password of the employee
+        /// </summary>
+        public string Password
         {
             get => default;
             set
@@ -55,7 +76,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string phone
+        /// <summary>
+        ///  Phone property represents the phone number of the employee
+        /// </summary>
+        public string Phone
         {
             get => default;
             set
@@ -63,7 +87,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string jobPosition
+        /// <summary>
+        ///  JobPosition property represents the job position / role of the employee in the Airline
+        /// </summary>
+        public string JobPosition
         {
             get => default;
             set

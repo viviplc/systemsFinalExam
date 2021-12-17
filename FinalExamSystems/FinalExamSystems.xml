@@ -386,6 +386,51 @@
             emerald insurance package provides 3 services
             </summary>
         </member>
+        <member name="T:FinalExamSystems.Employee">
+            <summary>
+             Employee class represents an employee of an airline which is a type of user of the airline reservation system
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.FirstName">
+            <summary>
+             FirstName property represents the first name of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.LastName">
+            <summary>
+             LastName property represents the last name of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.Birthdate">
+            <summary>
+             Birthdate property represents the birthday of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.Email">
+            <summary>
+             Email property represents the email of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.Gender">
+            <summary>
+             Gender property represents the gender of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.Password">
+            <summary>
+             Password property represents the password of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.Phone">
+            <summary>
+             Phone property represents the phone number of the employee
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Employee.JobPosition">
+            <summary>
+             JobPosition property represents the job position / role of the employee in the Airline
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.Flight">
             <summary>
             This is the Flight class which is an instance of a Plane that is taking a Route from one Airport to another Airport
@@ -577,6 +622,56 @@
             Notify method notify the customer who is interested on the itinerary on reservation process about any change
             </summary>
         </member>
+        <member name="T:FinalExamSystems.ItineraryType">
+            <summary>
+             ItineraryType class represents a type of Itinerary
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.ItineraryType.Description">
+            <summary>
+             Description property represents the description of the type of itinerary
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.Passenger">
+            <summary>
+             Passenger class represents a passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.FirstName">
+            <summary>
+             FirstName property represents the first name of the passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.LastName">
+            <summary>
+             LastName property represents the last name of the passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.Birthdate">
+            <summary>
+             Birthdate property represents the birthday of the passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.Gender">
+            <summary>
+             Gender property represents the gender of the passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.Phone">
+            <summary>
+             Phone property represents the phone number of the passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.Email">
+            <summary>
+             Email property represents the email of the passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Passenger.Tickets">
+            <summary>
+             Tickets property represents the tickets of the passenger
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.PaypalPaymentAdapter">
             <summary>
             This class is the Paypal Payment Adapter that handles payments using Paypal
@@ -609,6 +704,70 @@
             </summary>
             <param name="o">Object to be defined and updated on DB</param>
             <returns></returns>
+        </member>
+        <member name="T:FinalExamSystems.Plane">
+            <summary>
+             Plane class is for a specific plane instance in the fleet of Planes available for an Airline under its Brands
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Plane.Type">
+            <summary>
+             Type property is type of Plane
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Plane.Id">
+            <summary>
+             Id property is the specific id for the Plane instance
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Plane.Available">
+            <summary>
+             Available property is a boolean of whether the Plane is available or not
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.PlaneType">
+            <summary>
+             PlaneType class is for a specific plane type
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.PlaneType.Description">
+            <summary>
+             Description property is the description for a plane type
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.PotentialCustomer">
+            <summary>
+             PotentialCustomer class is for a User who is browsing the Airline System looking for a Flight to book
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.ProvisionServices">
+            <summary>
+             ProvisionServices class is the services that would be used by Employees of the Airline
+            </summary>
+        </member>
+        <member name="M:FinalExamSystems.ProvisionServices.AddPlaneToAirline">
+            <summary>
+            AddPlaneToAirline method adds a new plane to the Airline and returns the new plane
+            </summary>
+            <returns>Returns a new Plane that was created</returns>
+        </member>
+        <member name="M:FinalExamSystems.ProvisionServices.AddFlightClass">
+            <summary>
+            AddFlightClass method adds a new flight class to the Airline and returns the new flight class
+            </summary>
+            <returns>Returns the new Plane that was created</returns>
+        </member>
+        <member name="M:FinalExamSystems.ProvisionServices.ScheduleFlight">
+            <summary>
+            ScheduleFlight method creates a new Flight instance and returns the new flight
+            </summary>
+            <returns>Returns the new Flight that was created</returns>
+        </member>
+        <member name="M:FinalExamSystems.ProvisionServices.UpdateFlight">
+            <summary>
+            UpdateFlight method updates an existing Flight instance
+            </summary>
+            <returns>Returns the Flight that was updated</returns>
         </member>
         <member name="T:FinalExamSystems.ProvisionServicesController">
             <summary>
@@ -665,6 +824,26 @@
             ReprogramCoverage is a Concrete product
             </summary>
         </member>
+        <member name="T:FinalExamSystems.Route">
+            <summary>
+             Route class represents a route from an origin Airport to the destination Airport
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Route.Origin">
+            <summary>
+             Origin property is the origin Airport 
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Route.Destination">
+            <summary>
+             Destination property is the Destination Airport 
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Route.Flights">
+            <summary>
+             Flights property is the list of Flights taking this Route
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.SaveItinerary">
             <summary>
             Implementing Pure Fabrication / facace desgin pattern
@@ -715,6 +894,16 @@
             The Flight property is a association to the Flight that this seat instance belongs to
             </summary>
         </member>
+        <member name="T:FinalExamSystems.Service">
+            <summary>
+             Service class represents the abstract class for the services Users (Employees, Customers, Potential Customers) can use
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Service.IdService">
+            <summary>
+             IdService property represents the id of the Service
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.ServicesController">
             <summary>
             Service Controller base class for applying Controller design pattern
@@ -728,6 +917,96 @@
         <member name="M:FinalExamSystems.ServicesController.LinkServiceToUser">
             <summary>
             LinkServiceToUser method signature to be implemented
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.ServicesHistory">
+            <summary>
+             ServicesHistory class represents the history of the services provided to a User
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.ServicesHistory.User">
+            <summary>
+             User property represents the user that used a Service
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.ServicesHistory.Service">
+            <summary>
+             Service property represents the actual service 
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.ServicesHistory.DateRegister">
+            <summary>
+             DateRegister property represents the date and time the service was done
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.ServicesHistory.IdRegister">
+            <summary>
+             IdRegister property represents the Id in the Register
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.Ticket">
+            <summary>
+             Ticket class represents a ticket of a passenger
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Ticket.Price">
+            <summary>
+             Price property represents the cost of the ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Ticket.Passenger">
+            <summary>
+             Passenger property represents the passenger who owns this ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Ticket.Status">
+            <summary>
+             Status property represents the status of the ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Ticket.Type">
+            <summary>
+             Type property represents the type of the ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Ticket.Insurance">
+            <summary>
+             Insurance property represents the insurance that was purchased with the ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Ticket.Seat">
+            <summary>
+             Seat property represents the seat of the passenger booked in the ticket
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.TicketStatus">
+            <summary>
+             TicketStatus class represents a ticket status of a Ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.TicketStatus.Description">
+            <summary>
+             Description class represents the description of the ticket status instance
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.TicketType">
+            <summary>
+             TicketType class represents the type of Ticket
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.TicketType.Description">
+            <summary>
+             Description class represents the description of the type of Ticket
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.User">
+            <summary>
+             User class represents a user of the airline reservation system
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.User.Ip">
+            <summary>
+             Ip property represents a the ip of a user which would be used to get their location, mainly to provide Customers and Potential Customers with localized information
             </summary>
         </member>
     </members>
