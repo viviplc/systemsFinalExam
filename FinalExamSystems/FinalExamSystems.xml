@@ -119,6 +119,56 @@
              Abstract Factory Method allowing the subclasses to define it
             </summary>
         </member>
+        <member name="T:FinalExamSystems.City">
+            <summary>
+             This class is for a City with its name and the airports in the City
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.City.Name">
+            <summary>
+             Name property for name of city
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.City.Airports">
+            <summary>
+             Airports property for airports of city
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.CreditCard">
+            <summary>
+             This class is for a Credit Card of a Customer
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CreditCard.CardHolderName">
+            <summary>
+             CardHolderName property for the name of credit card holder
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CreditCard.CardHolderEmail">
+            <summary>
+             CardHolderEmail property for the email of credit card holder
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CreditCard.CardNumber">
+            <summary>
+             CardNumber property for the credit card number of credit card holder
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CreditCard.ExpirationMonth">
+            <summary>
+             ExpirationMonth property for the expiration month of credit card
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CreditCard.ExpirationYear">
+            <summary>
+             ExpirationYear property for the expiration year of credit card
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CreditCard.Cvv">
+            <summary>
+             Cvv property for the cvv number of credit card
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.CreditCardPaymentAdapter">
             <summary>
             This class is the Credit Card Payment Adapter that handles payments using Credit Card
