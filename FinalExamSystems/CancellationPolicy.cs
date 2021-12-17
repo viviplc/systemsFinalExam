@@ -5,9 +5,15 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  CancellationPolicy class is the class for the policy of cancellations for the Airline
+    /// </summary>
     public class CancellationPolicy
     {
-        private string policyId
+        /// <summary>
+        ///  PolicyId property is the id for the cancellation policy id
+        /// </summary>
+        public string PolicyId
         {
             get => default;
             set
@@ -15,7 +21,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string description
+        /// <summary>
+        ///  Description property is the description for the cancellation policy
+        /// </summary>
+        public string Description
         {
             get => default;
             set

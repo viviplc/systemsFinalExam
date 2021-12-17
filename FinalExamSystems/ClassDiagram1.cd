@@ -52,21 +52,21 @@
   </Class>
   <Class Name="FinalExamSystems.Itinerary">
     <Position X="10" Y="6" Width="1.5" />
-    <AssociationLine Name="origin" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Origin" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="11.5" Y="7.388" />
         <Point X="12.875" Y="7.388" />
         <Point X="12.875" Y="4.353" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="destination" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Destination" Type="FinalExamSystems.Airport" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="11.5" Y="6.636" />
         <Point X="12.062" Y="6.636" />
         <Point X="12.062" Y="4.353" />
       </Path>
     </AssociationLine>
-    <AssociationLine Name="passengers" Type="FinalExamSystems.Passenger" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Passengers" Type="FinalExamSystems.Passenger" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="11" Y="8.776" />
         <Point X="11" Y="11.532" />
@@ -84,15 +84,15 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>CAEIBAABAAAAAAACBAAAAABAAAABAAJAAAACBAAAAAA=</HashCode>
+      <HashCode>BAEAAAABAAYAAAAAAAAAAAAAAAAAQAJEAQACAAgACAA=</HashCode>
       <FileName>Itinerary.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="paymentMehod" />
-      <Property Name="type" />
-      <Property Name="origin" />
-      <Property Name="destination" />
-      <Property Name="passengers" />
+      <Property Name="PaymentMehod" />
+      <Property Name="Type" />
+      <Property Name="Origin" />
+      <Property Name="Destination" />
+      <Property Name="Passengers" />
       <Property Name="Customer" />
     </ShowAsAssociation>
   </Class>
@@ -116,7 +116,7 @@
   <Class Name="FinalExamSystems.Gate">
     <Position X="9" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Gate.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -321,7 +321,7 @@
   <Class Name="FinalExamSystems.FlightClass">
     <Position X="20" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlightClass.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -412,7 +412,7 @@
   <Class Name="FinalExamSystems.CancellationPolicy">
     <Position X="15.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>CancellationPolicy.cs</FileName>
     </TypeIdentifier>
   </Class>

@@ -119,6 +119,21 @@
              Abstract Factory Method allowing the subclasses to define it
             </summary>
         </member>
+        <member name="T:FinalExamSystems.CancellationPolicy">
+            <summary>
+             CancellationPolicy class is the class for the policy of cancellations for the Airline
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CancellationPolicy.PolicyId">
+            <summary>
+             PolicyId property is the id for the cancellation policy id
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CancellationPolicy.Description">
+            <summary>
+             Description property is the description for the cancellation policy
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.City">
             <summary>
              This class is for a City with its name and the airports in the City
@@ -417,10 +432,35 @@
              This method gets the seats that are available, it is in the Flight class as the Flight is the information expert with all the seat information
             </summary>
         </member>
+        <member name="T:FinalExamSystems.FlightClass">
+            <summary>
+             FlightClass class is the class type for a Flight
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.FlightClass.Description">
+            <summary>
+             Description property is the description for the class for a Flight instance
+            </summary>
+        </member>
         <member name="T:FinalExamSystems.FullReturnCoverage">
             <summary>
             FullReturnCoverage implements Factory Method design pattern
             FullReturnCoverage is a Concrete product
+            </summary>
+        </member>
+        <member name="T:FinalExamSystems.Gate">
+            <summary>
+             Gate class is the class for a Gate in an Airport
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Gate.Number">
+            <summary>
+             Number property is the Gate number
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Gate.IsAvailable">
+            <summary>
+             IsAvailable property is a boolean of whether the Gate is available or not
             </summary>
         </member>
         <member name="T:FinalExamSystems.GoldPackage">
@@ -478,6 +518,51 @@
         <member name="T:FinalExamSystems.Itinerary">
             <summary>
             Itinerary class implements the observer design pattern allowing to keep tracking on its timeout property
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.DepartureDate">
+            <summary>
+             DepartureDate property is Date and Time of Departure of Customer for trip
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.ReturnDate">
+            <summary>
+             ReturnDate property is Date and Time of Return of Customer for trip
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.TotalPrice">
+            <summary>
+             TotalPrice property is total cost of the itinerary
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.PaymentMethod">
+            <summary>
+             PaymentMethod property payment method of the itinerary
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.Type">
+            <summary>
+             Type property for type of the itinerary
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.Origin">
+            <summary>
+             Origin property for the origin Airport
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.Destination">
+            <summary>
+             Destination property for the destination Airport
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.Passengers">
+            <summary>
+             Passengers property for all the passengers in the itinerary 
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.Itinerary.Customer">
+            <summary>
+             Customer property for the Customer creating the itinerary 
             </summary>
         </member>
         <member name="P:FinalExamSystems.Itinerary.Timeout">
