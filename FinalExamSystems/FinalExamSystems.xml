@@ -119,6 +119,19 @@
              Abstract Factory Method allowing the subclasses to define it
             </summary>
         </member>
+        <member name="T:FinalExamSystems.CreditCardPaymentAdapter">
+            <summary>
+            This class is the Credit Card Payment Adapter that handles payments using Credit Card
+            </summary>
+        </member>
+        <member name="M:FinalExamSystems.CreditCardPaymentAdapter.MakePayment(FinalExamSystems.Customer,System.Single)">
+            <summary>
+            MakePayment method is the implemented method from the PaymentServiceAdapter that makes a Credit Card Payment
+            </summary>
+            <param name="customer">Customer is mandatory as it contains informaiton relating to the payment</param>
+            <param name="totalPrice">Total Price is mandatory</param>
+            <returns>Returns a boolean. It will be true if successful and false if not successful</returns>
+        </member>
         <member name="T:FinalExamSystems.Customer">
             <summary>
              Customer class implements the Observer design pattern, keeping tracking on the timeout over a reservation
@@ -201,6 +214,11 @@
         <member name="P:FinalExamSystems.CustomerServices.SaveItinerary">
             <summary>
             SaveItinerary property
+            </summary>
+        </member>
+        <member name="P:FinalExamSystems.CustomerServices.IPaymentServiceAdapter">
+            <summary>
+            IPaymentServiceAdapter property
             </summary>
         </member>
         <member name="M:FinalExamSystems.CustomerServices.searchFlight(System.String,System.String,System.DateTime,System.DateTime)">
@@ -391,6 +409,22 @@
             Product Class
             </summary>
         </member>
+        <member name="T:FinalExamSystems.IPaymentServiceAdapter">
+            <summary>
+            This class is the Adapter Interface that handles payments. 
+            It allows the use of the Adapter Design Pattern where this interface is converted into a CreditCardPaymentAdapter or PaypalPaymentAdapter based on the Customer's choice of payment method
+            Additionally the protected variations pattern is used because as the IPaymentServiceAdapter interface adds a level of indirection, variations in external API's (payment method services in this case) will still result in the system being protected. 
+            We are also applying the Indirection pattern as we are assigning the responsibility of payments to an intermediary object (IPaymentServiceAdapter) so that objects around it don’t have to be coupled directly.
+            </summary>
+        </member>
+        <member name="M:FinalExamSystems.IPaymentServiceAdapter.MakePayment(FinalExamSystems.Customer,System.Single)">
+            <summary>
+            MakePayment method is the bluprint for the method that makes the Payment 
+            </summary>
+            <param name="customer">Customer is mandatory as it contains informaiton relating to the payment</param>
+            <param name="totalPrice">Total Price is mandatory</param>
+            <returns>Returns a boolean. It will be true if successful and false if not successful</returns>
+        </member>
         <member name="T:FinalExamSystems.Itinerary">
             <summary>
             Itinerary class implements the observer design pattern allowing to keep tracking on its timeout property
@@ -407,6 +441,19 @@
             Observer pattern implementation
             Notify method notify the customer who is interested on the itinerary on reservation process about any change
             </summary>
+        </member>
+        <member name="T:FinalExamSystems.PaypalPaymentAdapter">
+            <summary>
+            This class is the Paypal Payment Adapter that handles payments using Paypal
+            </summary>
+        </member>
+        <member name="M:FinalExamSystems.PaypalPaymentAdapter.MakePayment(FinalExamSystems.Customer,System.Single)">
+            <summary>
+            MakePayment method is the implemented method from the PaymentServiceAdapter that makes a Paypal Payment
+            </summary>
+            <param name="customer">Customer is mandatory as it contains informaiton relating to the payment</param>
+            <param name="totalPrice">Total Price is mandatory</param>
+            <returns>Returns a boolean. It will be true if successful and false if not successful</returns>
         </member>
         <member name="T:FinalExamSystems.PersistanceStorage">
             <summary>

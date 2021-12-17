@@ -436,11 +436,12 @@
   <Class Name="FinalExamSystems.CustomerServices">
     <Position X="5.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAIAAAAABAAAkAABAAAAAAAAAAAIg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAABAAAkAABAAAAAAAAAAIIg=</HashCode>
       <FileName>CustomerServices.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="SaveItinerary" />
+      <Property Name="IPaymentServiceAdapter" />
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.ServicesHistory">
@@ -576,11 +577,34 @@
       <FileName>AdditionalFeesCoverage.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="FinalExamSystems.CreditCardPaymentAdapter">
+    <Position X="2.75" Y="14.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>CreditCardPaymentAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FinalExamSystems.PaypalPaymentAdapter">
+    <Position X="5.25" Y="14.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>PaypalPaymentAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="FinalExamSystems.ICustomer">
     <Position X="6.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ICustomer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FinalExamSystems.IPaymentServiceAdapter">
+    <Position X="4" Y="13.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPaymentServiceAdapter.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
