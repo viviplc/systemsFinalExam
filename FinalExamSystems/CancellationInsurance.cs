@@ -5,30 +5,33 @@ using System.Text;
 
 namespace FinalExamSystems
 {
-    public class CancellationInsurance
+    /// <summary>
+    /// CancellationInsurance class implements the Factory Method design pattern
+    /// Creator class definition
+    /// </summary>
+    public abstract class CancellationInsurance
     {
-        private double price
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        private double price;
+        private string packageName;
+        private List<InsuranceService> package;
 
-        private int returnCoverage
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        /// <summary>
+        /// Price property
+        /// </summary>
+        public double Price { get => price; set => price = value; }
+        /// <summary>
+        /// Package NAme property
+        /// </summary>
+        public string PackageName { get => packageName; set => packageName = value; }
+        /// <summary>
+        /// Insurance Service List as package property
+        /// </summary>
+        public List<InsuranceService> Package { get => package; set => package = value; }
 
-        private string package
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        /// <summary>
+        ///  Abstract Factory Method allowing the subclasses to define it
+        /// </summary>
+        public abstract void CreateInsurancePackage();
+
     }
 }

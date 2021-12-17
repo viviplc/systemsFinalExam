@@ -184,15 +184,15 @@
       <Path>
         <Point X="16.75" Y="10.938" />
         <Point X="17.125" Y="10.938" />
-        <Point X="17.125" Y="8.702" />
-        <Point X="19" Y="8.702" />
+        <Point X="17.125" Y="9.276" />
+        <Point X="18" Y="9.276" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="seat" Type="FinalExamSystems.Seat" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="15.562" Y="10.5" />
-        <Point X="15.562" Y="6.875" />
-        <Point X="19" Y="6.875" />
+        <Point X="15.562" Y="6.625" />
+        <Point X="19" Y="6.625" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -222,18 +222,18 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.CancellationInsurance">
-    <Position X="19" Y="7.75" Width="1.5" />
+    <Position X="18" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAhAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAQAAABAAAAAQABAAAAAQAAAAAAAAAAAAgAA=</HashCode>
       <FileName>CancellationInsurance.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.Seat">
-    <Position X="19" Y="6" Width="1.5" />
+    <Position X="19" Y="5.75" Width="1.5" />
     <AssociationLine Name="ticket" Type="FinalExamSystems.Ticket" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="19" Y="7.125" />
-        <Point X="16.375" Y="7.125" />
+        <Point X="19" Y="6.875" />
+        <Point X="16.375" Y="6.875" />
         <Point X="16.375" Y="10.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -242,7 +242,7 @@
     </AssociationLine>
     <AssociationLine Name="Flight" Type="FinalExamSystems.Flight" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="19.5" Y="6" />
+        <Point X="19.5" Y="5.75" />
         <Point X="19.5" Y="5.688" />
         <Point X="18.562" Y="5.688" />
         <Point X="18.562" Y="4.68" />
@@ -265,8 +265,8 @@
     <AssociationLine Name="seats" Type="FinalExamSystems.Seat" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="18.219" Y="4.68" />
-        <Point X="18.219" Y="6.312" />
-        <Point X="19" Y="6.312" />
+        <Point X="18.219" Y="6.062" />
+        <Point X="19" Y="6.062" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -377,6 +377,13 @@
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
+    <AssociationLine Name="Flights" Type="FinalExamSystems.Flight" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="6.375" />
+        <Point X="17.719" Y="6.375" />
+        <Point X="17.719" Y="4.68" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAQAAAAAAAAAAQAAAAEAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Brand.cs</FileName>
@@ -512,6 +519,34 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>SaveItinerary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.InsuranceService">
+    <Position X="23.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InsuranceService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.BlackPackage">
+    <Position X="20.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BlackPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.EmeraldPackage">
+    <Position X="20.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EmeraldPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.GoldPackage">
+    <Position X="20.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>GoldPackage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="FinalExamSystems.ICustomer">
