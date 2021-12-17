@@ -184,15 +184,15 @@
       <Path>
         <Point X="16.75" Y="10.938" />
         <Point X="17.125" Y="10.938" />
-        <Point X="17.125" Y="9.276" />
-        <Point X="18" Y="9.276" />
+        <Point X="17.125" Y="9.399" />
+        <Point X="18" Y="9.399" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="seat" Type="FinalExamSystems.Seat" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="15.562" Y="10.5" />
-        <Point X="15.562" Y="6.625" />
-        <Point X="19" Y="6.625" />
+        <Point X="15.562" Y="6.375" />
+        <Point X="18.75" Y="6.375" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -229,11 +229,11 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.Seat">
-    <Position X="19" Y="5.75" Width="1.5" />
+    <Position X="18.75" Y="5.5" Width="1.5" />
     <AssociationLine Name="ticket" Type="FinalExamSystems.Ticket" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="19" Y="6.875" />
-        <Point X="16.375" Y="6.875" />
+        <Point X="18.75" Y="6.625" />
+        <Point X="16.375" Y="6.625" />
         <Point X="16.375" Y="10.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -242,8 +242,7 @@
     </AssociationLine>
     <AssociationLine Name="Flight" Type="FinalExamSystems.Flight" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="19.5" Y="5.75" />
-        <Point X="19.5" Y="5.688" />
+        <Point X="18.75" Y="5.688" />
         <Point X="18.562" Y="5.688" />
         <Point X="18.562" Y="4.68" />
       </Path>
@@ -265,8 +264,8 @@
     <AssociationLine Name="seats" Type="FinalExamSystems.Seat" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="18.219" Y="4.68" />
-        <Point X="18.219" Y="6.062" />
-        <Point X="19" Y="6.062" />
+        <Point X="18.219" Y="5.938" />
+        <Point X="18.75" Y="5.938" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -320,7 +319,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="FinalExamSystems.FlightClass">
-    <Position X="20" Y="4" Width="1.5" />
+    <Position X="20" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FlightClass.cs</FileName>
@@ -522,7 +521,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.InsuranceService">
-    <Position X="23.25" Y="5.75" Width="1.5" />
+    <Position X="20.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>InsuranceService.cs</FileName>
@@ -531,14 +530,14 @@
   <Class Name="FinalExamSystems.BlackPackage">
     <Position X="20.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>BlackPackage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FinalExamSystems.EmeraldPackage">
     <Position X="20.75" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>EmeraldPackage.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -547,6 +546,34 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
       <FileName>GoldPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.FullReturnCoverage">
+    <Position X="23" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FullReturnCoverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.HalfReturnCoverage">
+    <Position X="23" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HalfReturnCoverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.ReprogramCoverage">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReprogramCoverage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinalExamSystems.AdditionalFeesCoverage">
+    <Position X="23" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdditionalFeesCoverage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="FinalExamSystems.ICustomer">

@@ -16,6 +16,16 @@ namespace FinalExamSystems
         private List<InsuranceService> package;
 
         /// <summary>
+        /// Cancellation Insurance Constructor calls abstract Factory method
+        /// </summary>
+        public CancellationInsurance()
+        {
+            this.CreateInsurancePackage();
+        }
+
+
+
+        /// <summary>
         /// Price property
         /// </summary>
         public double Price { get => price; set => price = value; }

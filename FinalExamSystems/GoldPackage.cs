@@ -13,10 +13,12 @@ namespace FinalExamSystems
     {
         /// <summary>
         /// createInsurancePackage overriding method from base class
+        /// gold insurance package provides 2 services
         /// </summary>
         public override void CreateInsurancePackage()
         {
-
+            Package.Add(new HalfReturnCoverage());
+            Package.Add(new ReprogramCoverage());
         }
     }
 }
