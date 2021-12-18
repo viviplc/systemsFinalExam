@@ -5,9 +5,15 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  Ticket class represents a ticket of a passenger
+    /// </summary>
     public class Ticket
     {
-        private double price
+        /// <summary>
+        ///  Price property represents the cost of the ticket
+        /// </summary>
+        public double Price
         {
             get => default;
             set
@@ -15,7 +21,10 @@ namespace FinalExamSystems
             }
         }
 
-        private Passenger passenger
+        /// <summary>
+        ///  Passenger property represents the passenger who owns this ticket
+        /// </summary>
+        public Passenger Passenger
         {
             get => default;
             set
@@ -23,7 +32,10 @@ namespace FinalExamSystems
             }
         }
 
-        private TicketStatus status
+        /// <summary>
+        ///  Status property represents the status of the ticket
+        /// </summary>
+        public TicketStatus Status
         {
             get => default;
             set
@@ -31,7 +43,10 @@ namespace FinalExamSystems
             }
         }
 
-        private TicketType type
+        /// <summary>
+        ///  Type property represents the type of the ticket
+        /// </summary>
+        public TicketType Type
         {
             get => default;
             set
@@ -39,7 +54,10 @@ namespace FinalExamSystems
             }
         }
 
-        private CancellationInsurance insurance
+        /// <summary>
+        ///  Insurance property represents the insurance that was purchased with the ticket
+        /// </summary>
+        public CancellationInsurance Insurance
         {
             get => default;
             set
@@ -47,7 +65,10 @@ namespace FinalExamSystems
             }
         }
 
-        private Seat seat
+        /// <summary>
+        ///  Seat property represents the seat of the passenger booked in the ticket
+        /// </summary>
+        public Seat Seat
         {
             get => default;
             set

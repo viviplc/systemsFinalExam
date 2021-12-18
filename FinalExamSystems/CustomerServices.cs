@@ -32,6 +32,17 @@ namespace FinalExamSystems
             get => persistance; set => persistance = (SaveItinerary)value;
         }
 
+        /// <summary>
+        /// IPaymentServiceAdapter property
+        /// </summary>
+        public IPaymentServiceAdapter IPaymentServiceAdapter
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
 
 
         /// <summary>

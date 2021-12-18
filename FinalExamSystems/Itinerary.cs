@@ -13,7 +13,10 @@ namespace FinalExamSystems
         private Customer customer;
         private bool timeout;
 
-        public DateTime departureDate
+        /// <summary>
+        ///  DepartureDate property is Date and Time of Departure of Customer for trip
+        /// </summary>
+        public DateTime DepartureDate
         {
             get => default;
             set
@@ -21,7 +24,10 @@ namespace FinalExamSystems
             }
         }
 
-        public DateTime returnDate
+        /// <summary>
+        ///  ReturnDate property is Date and Time of Return of Customer for trip
+        /// </summary>
+        public DateTime ReturnDate
         {
             get => default;
             set
@@ -29,7 +35,10 @@ namespace FinalExamSystems
             }
         }
 
-        public double totalPrice
+        /// <summary>
+        ///  TotalPrice property is total cost of the itinerary
+        /// </summary>
+        public double TotalPrice
         {
             get => default;
             set
@@ -37,7 +46,10 @@ namespace FinalExamSystems
             }
         }
 
-        public CreditCard paymentMehod
+        /// <summary>
+        ///  PaymentMethod property payment method of the itinerary
+        /// </summary>
+        public CreditCard PaymentMethod
         {
             get => default;
             set
@@ -45,7 +57,10 @@ namespace FinalExamSystems
             }
         }
 
-        public ItineraryType type
+        /// <summary>
+        ///  Type property for type of the itinerary
+        /// </summary>
+        public ItineraryType Type
         {
             get => default;
             set
@@ -53,7 +68,10 @@ namespace FinalExamSystems
             }
         }
 
-        public Airport origin
+        /// <summary>
+        ///  Origin property for the origin Airport
+        /// </summary>
+        public Airport Origin
         {
             get => default;
             set
@@ -61,7 +79,10 @@ namespace FinalExamSystems
             }
         }
 
-        public Airport destination
+        /// <summary>
+        ///  Destination property for the destination Airport
+        /// </summary>
+        public Airport Destination
         {
             get => default;
             set
@@ -69,7 +90,10 @@ namespace FinalExamSystems
             }
         }
 
-        public FinalExamSystems.Passenger[] passengers
+        /// <summary>
+        ///  Passengers property for all the passengers in the itinerary 
+        /// </summary>
+        public FinalExamSystems.Passenger[] Passengers
         {
             get => default;
             set
@@ -77,6 +101,9 @@ namespace FinalExamSystems
             }
         }
 
+        /// <summary>
+        ///  Customer property for the Customer creating the itinerary 
+        /// </summary>
         public Customer Customer
         {
             get => customer; set => customer = value;

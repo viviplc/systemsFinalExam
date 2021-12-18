@@ -5,9 +5,15 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  This class is for a City with its name and the airports in the City
+    /// </summary>
     public class City
     {
-        private string name
+        /// <summary>
+        ///  Name property for name of city
+        /// </summary>
+        public string Name
         {
             get => default;
             set
@@ -15,7 +21,10 @@ namespace FinalExamSystems
             }
         }
 
-        private FinalExamSystems.Airport[] airports
+        /// <summary>
+        ///  Airports property for airports of city
+        /// </summary>
+        public FinalExamSystems.Airport[] Airports
         {
             get => default;
             set

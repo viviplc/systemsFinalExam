@@ -5,9 +5,15 @@ using System.Text;
 
 namespace FinalExamSystems
 {
+    /// <summary>
+    ///  Passenger class represents a passenger
+    /// </summary>
     public class Passenger
     {
-        private string firstName
+        /// <summary>
+        ///  FirstName property represents the first name of the passenger
+        /// </summary>
+        public string FirstName
         {
             get => default;
             set
@@ -15,7 +21,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string lastName
+        /// <summary>
+        ///  LastName property represents the last name of the passenger
+        /// </summary>
+        public string LastName
         {
             get => default;
             set
@@ -23,7 +32,10 @@ namespace FinalExamSystems
             }
         }
 
-        private DateTime birthdate
+        /// <summary>
+        ///  Birthdate property represents the birthday of the passenger
+        /// </summary>
+        public DateTime Birthdate
         {
             get => default;
             set
@@ -31,7 +43,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string gender
+        /// <summary>
+        ///  Gender property represents the gender of the passenger
+        /// </summary>
+        public string Gender
         {
             get => default;
             set
@@ -39,7 +54,10 @@ namespace FinalExamSystems
             }
         }
 
-        private ushort phone
+        /// <summary>
+        ///  Phone property represents the phone number of the passenger
+        /// </summary>
+        public ushort Phone
         {
             get => default;
             set
@@ -47,7 +65,10 @@ namespace FinalExamSystems
             }
         }
 
-        private string email
+        /// <summary>
+        ///  Email property represents the email of the passenger
+        /// </summary>
+        public string Email
         {
             get => default;
             set
@@ -55,7 +76,10 @@ namespace FinalExamSystems
             }
         }
 
-        private FinalExamSystems.Ticket[] tickets
+        /// <summary>
+        ///  Tickets property represents the tickets of the passenger
+        /// </summary>
+        public FinalExamSystems.Ticket[] Tickets
         {
             get => default;
             set
